@@ -45,3 +45,12 @@ Board geometry re-extraction (any KiCad 6+ board):
 Boolean-validated; physical print pending (print a pilot-hole coupon
 ladder Ø2.0–2.3 before the case — the M2.5 self-tap pilot is the one
 printer-dependent number).
+
+## 3D
+
+- Spin the assembly: [`exports/rp2040_assembly.glb`](exports/rp2040_assembly.glb) (GLB — Windows 3D Viewer, macOS
+  Preview, Blender, gltf-viewer.donmccurdy.com). STLs in
+  `output/exports/` render inline on GitHub.
+- Scored by the forge metric: **1.00 (7/7 checks)** — see
+  `Amperstrand/enclosure-forge` experiments/runs/.
+

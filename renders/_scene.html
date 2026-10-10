@@ -1,0 +1,35 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<style>body{margin:0;background:#101418}</style></head><body>
+<div id="v"></div>
+<script src="file:///home/user/src/nucula-enclosure/reference/three.min.js"></script><script src="file:///home/user/src/nucula-enclosure/reference/STLLoader.js"></script>
+<script>
+const PARTS = [["bottom", "/home/user/src/rp2040-devboard-enclosure/output/exports/bottom_shell.stl", 3095109], ["lid", "/home/user/src/rp2040-devboard-enclosure/output/exports/lid.stl", 3951191]];
+const VIEWS = [{"az": 35, "el": 28, "path": "/home/user/src/rp2040-devboard-enclosure/renders/rp2040_iso.png"}, {"az": 0, "el": 88, "path": "/home/user/src/rp2040-devboard-enclosure/renders/rp2040_top.png"}, {"az": -55, "el": 18, "path": "/home/user/src/rp2040-devboard-enclosure/renders/rp2040_usb.png"}];
+function render(){const c=document.getElementById('v');
+const s=new THREE.Scene(); s.background=new THREE.Color(0x101418);
+const r=new THREE.WebGLRenderer({antialias:true,preserveDrawingBuffer:true});
+r.setSize(1600,1000); c.appendChild(r.domElement);
+s.add(new THREE.DirectionalLight(0xffffff,0.9).translateX(80).translateY(120).translateZ(160));
+s.add(new THREE.DirectionalLight(0xbfd4dd,0.45).translateX(-120).translateY(-40).translateZ(60));
+s.add(new THREE.AmbientLight(0xffffff,0.38));
+let pending=PARTS.length; const meshes={};
+for(const [tag,file,color] of PARTS){
+ new THREE.STLLoader().load(file,g=>{const m=new THREE.Mesh(g,
+  new THREE.MeshPhongMaterial({color:color,shininess:42}));
+  meshes[tag]=m; if(--pending===0)shoot();});}
+function shoot(){const box=new THREE.Box3();
+for(const t in meshes){box.expandByObject(meshes[t]);s.add(meshes[t]);}
+const ctr=box.getCenter(new THREE.Vector3());
+const size=box.getSize(new THREE.Vector3());
+const rad=Math.max(size.x,size.y,size.z);
+const cam=new THREE.PerspectiveCamera(32,1.6,1,4000); let i=0;
+function shot(){if(i>=VIEWS.length){document.title='DONE';return;}
+const v=VIEWS[i];const look=v.center?new THREE.Vector3(...v.center):ctr;
+const er=v.span?v.span:rad;const az=v.az*Math.PI/180,el=v.el*Math.PI/180;
+const d=er*(v.dist||2.1);
+cam.position.set(look.x+d*Math.cos(el)*Math.sin(az),
+look.y-d*Math.cos(el)*Math.cos(az),look.z+d*Math.sin(el));
+cam.up.set(0,0,1);cam.lookAt(look);r.render(scene,cam);
+window.__m='S'+i;i++;}
+window.__next=shot;shot();}}
+render();</script></body></html>
