@@ -1,0 +1,28 @@
+name: Validate
+on:
+  push:
+  pull_request:
+
+jobs:
+  # The repo's quality bar is boolean validation (see AGENTS.md): zero
+  # unexpected common volume against the KiCad-derived reference solids.
+  # analysis/*.json are committed, so no KiCad source checkout is needed.
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      # OCP/OpenCascade thread pool can race on constrained CI runners
+      OMP_NUM_THREADS: "1"
+      OPENBLAS_NUM_THREADS: "1"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install --quiet -r requirements.txt
+
+      - name: Boolean validation (57 checks)
+        run: python scripts/validate.py

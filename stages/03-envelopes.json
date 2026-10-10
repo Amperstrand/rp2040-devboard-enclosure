@@ -1,0 +1,10 @@
+{
+  "stage": "S3_envelopes",
+  "envelope_plan": [
+    {"name": "usb_plug_envelope", "zone": "u 20.9..32.4, v wall-to+12, z 4.2..9.3", "provenance": "manufacturer_doc (micro-B overmold class 8.0x3.2) + enclosure_design_decision (0.6 clear, 12 reach)", "check": "usb_envelope_clear"},
+    {"name": "header_exit_j3", "zone": "u wall-to+10 over v 3.2..50.1, z 0.2..14.1", "provenance": "derived_kicad (J3 bbox) + enclosure_design_decision (10 reach, full height)", "check": "header_exit_envelope_clear"},
+    {"name": "header_exit_j4", "zone": "u wall-to+10 over v 3.2..50.1 mirrored", "provenance": "derived_kicad (J4 bbox — SECOND 2x18 found in debug loop 1)", "check": "header_exit_envelope_clear"},
+    {"name": "boss_bands", "zone": "4 annuli at measured hole centres", "provenance": "derived_kicad (H1..H4, drill 2.7)", "check": "bosses_at_measured_holes"}
+  ],
+  "elimination_notes": "Friction-lip lid chosen over snap tabs: square board + 4 screws already constrain it; no antenna zones on this board (unlike nucula/lilygo) so metal screws are acceptable — M2.5 self-tap into printed pilots, boss placement follows the measured 27.94 x 42.43 hole grid. First extraction pass missed J4 (ref-keying bug) — caught by component_clearance 304.5 mm3 wall collision, not by eyeballing."
+}

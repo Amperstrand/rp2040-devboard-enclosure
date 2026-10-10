@@ -1,0 +1,9 @@
+{
+  "stage": "S4_parameters",
+  "summary": "cad/parameters.py: measured values load from analysis/*.json (outline, thickness, holes, component bboxes+heights). Design literals with provenance: WALL/FLOOR 1.6, CORNER_R 3.0, BOSS_OUTER 6.0 (drill 2.7 + wall), BOSS_PILOT 2.1 (M2.5 self-tap, coupon-verify), BOARD_SEAT_Z 3.0, USB envelope class dims, HDR_EXIT_REACH 10, LID_LIP 1.2 / LID_GAP 0.25. Derived: LID_INT_Z = seat + board + tallest(8.5) + 1.0 clearance.",
+  "debug_iterations": [
+    {"iter": 1, "failures": "J2/J3/J4 header collisions 304/11/304 mm3; envelope 817 mm3; bosses probe [0,0,0,0]", "root_causes": "LID_INT_Z forgot the seat height; J4 = second 2x18 header on the opposite wall (both need relief + lid-lip breaks); boss probe z above the seat plane", "patch": "LID_INT_Z += BOARD_SEAT_Z; per-header relief on nearest wall; lip cut over header bands; probes moved below seat"},
+    {"iter": 2, "failures": "bosses_at_measured_holes blocked 3.142 mm3 each", "root_cause": "pilot cylinder FUSED as solid rod instead of CUT as hole (pi*1^2*1 = 3.14 confirmed by arithmetic)", "patch": "solid.cut(pilot) for all four"},
+    {"iter": 3, "failures": "none", "result": "7/7 PASS, deterministic rebuild hash-identical"}
+  ]
+}

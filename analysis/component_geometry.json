@@ -1,0 +1,392 @@
+{
+ "C12": {
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "u": [
+   27.122,
+   27.742
+  ],
+  "v": [
+   35.054,
+   36.574
+  ],
+  "height": 0.5,
+  "height_provenance": "conservative_assumption"
+ },
+ "C2": {
+  "footprint": "Capacitor_SMD:C_0805_2012Metric",
+  "u": [
+   34.327,
+   35.777
+  ],
+  "v": [
+   9.538,
+   12.438
+  ],
+  "height": 1.0,
+  "height_provenance": "conservative_assumption"
+ },
+ "C3": {
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "u": [
+   25.344,
+   25.964
+  ],
+  "v": [
+   20.548,
+   22.068
+  ],
+  "height": 0.5,
+  "height_provenance": "conservative_assumption"
+ },
+ "C8": {
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "u": [
+   31.018,
+   32.538
+  ],
+  "v": [
+   25.344,
+   25.964
+  ],
+  "height": 0.5,
+  "height_provenance": "conservative_assumption"
+ },
+ "J3": {
+  "footprint": "Connector_PinHeader_2.54mm:PinHeader_2x18_P2.54mm_Vertical",
+  "u": [
+   1.69,
+   5.93
+  ],
+  "v": [
+   4.23,
+   49.11
+  ],
+  "height": 8.5,
+  "height_provenance": "conservative_assumption"
+ },
+ "R1": {
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "u": [
+   18.73,
+   19.37
+  ],
+  "v": [
+   14.592,
+   16.152
+  ],
+  "height": 0.5,
+  "height_provenance": "conservative_assumption"
+ },
+ "C11": {
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "u": [
+   31.272,
+   32.792
+  ],
+  "v": [
+   29.408,
+   30.028
+  ],
+  "height": 0.5,
+  "height_provenance": "conservative_assumption"
+ },
+ "J2": {
+  "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",
+  "u": [
+   21.502,
+   25.742
+  ],
+  "v": [
+   9.31,
+   11.01
+  ],
+  "height": 8.5,
+  "height_provenance": "conservative_assumption"
+ },
+ "C1": {
+  "footprint": "Capacitor_SMD:C_0805_2012Metric",
+  "u": [
+   31.787,
+   33.237
+  ],
+  "v": [
+   9.538,
+   12.438
+  ],
+  "height": 1.0,
+  "height_provenance": "conservative_assumption"
+ },
+ "R2": {
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "u": [
+   20.737,
+   21.377
+  ],
+  "v": [
+   14.592,
+   16.152
+  ],
+  "height": 0.5,
+  "height_provenance": "conservative_assumption"
+ },
+ "R5": {
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "u": [
+   28.382,
+   29.022
+  ],
+  "v": [
+   22.082,
+   23.642
+  ],
+  "height": 0.5,
+  "height_provenance": "conservative_assumption"
+ },
+ "C5": {
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "u": [
+   29.408,
+   30.028
+  ],
+  "v": [
+   22.1,
+   23.62
+  ],
+  "height": 0.5,
+  "height_provenance": "conservative_assumption"
+ },
+ "C7": {
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "u": [
+   30.424,
+   31.044
+  ],
+  "v": [
+   22.1,
+   23.62
+  ],
+  "height": 0.5,
+  "height_provenance": "conservative_assumption"
+ },
+ "C4": {
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "u": [
+   28.138,
+   28.758
+  ],
+  "v": [
+   35.054,
+   36.574
+  ],
+  "height": 0.5,
+  "height_provenance": "conservative_assumption"
+ },
+ "C14": {
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "u": [
+   23.058,
+   23.678
+  ],
+  "v": [
+   14.582,
+   16.102
+  ],
+  "height": 0.5,
+  "height_provenance": "conservative_assumption"
+ },
+ "J1": {
+  "footprint": "SamacSys_Parts:ZX62DB5PA830",
+  "u": [
+   21.951,
+   31.4
+  ],
+  "v": [
+   1.963,
+   6.937
+  ],
+  "height": 3.35,
+  "height_provenance": "conservative_assumption"
+ },
+ "R4": {
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "u": [
+   27.366,
+   28.006
+  ],
+  "v": [
+   22.082,
+   23.642
+  ],
+  "height": 0.5,
+  "height_provenance": "conservative_assumption"
+ },
+ "J4": {
+  "footprint": "Connector_PinHeader_2.54mm:PinHeader_2x18_P2.54mm_Vertical",
+  "u": [
+   47.41,
+   51.65
+  ],
+  "v": [
+   4.23,
+   49.11
+  ],
+  "height": 8.5,
+  "height_provenance": "conservative_assumption"
+ },
+ "U2": {
+  "footprint": "SamacSys_Parts:SOIC127P790X216-8N",
+  "u": [
+   15.887,
+   23.737
+  ],
+  "v": [
+   17.336,
+   22.796
+  ],
+  "height": 1.0,
+  "height_provenance": "conservative_assumption"
+ },
+ "C13": {
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "u": [
+   26.36,
+   26.98
+  ],
+  "v": [
+   20.548,
+   22.068
+  ],
+  "height": 0.5,
+  "height_provenance": "conservative_assumption"
+ },
+ "C6": {
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "u": [
+   31.018,
+   32.538
+  ],
+  "v": [
+   24.074,
+   24.694
+  ],
+  "height": 0.5,
+  "height_provenance": "conservative_assumption"
+ },
+ "U1": {
+  "footprint": "Package_TO_SOT_SMD:SOT-223-3_TabPin2",
+  "u": [
+   32.002,
+   38.102
+  ],
+  "v": [
+   13.122,
+   21.422
+  ],
+  "height": 6.5,
+  "height_provenance": "conservative_assumption"
+ },
+ "U4": {
+  "footprint": "Package_DFN_QFN:QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm",
+  "u": [
+   22.8,
+   30.55
+  ],
+  "v": [
+   24.963,
+   32.713
+  ],
+  "height": 0.9,
+  "height_provenance": "conservative_assumption"
+ },
+ "C17": {
+  "footprint": "Capacitor_SMD:C_0805_2012Metric",
+  "u": [
+   10.996,
+   13.896
+  ],
+  "v": [
+   9.435,
+   10.885
+  ],
+  "height": 1.0,
+  "height_provenance": "conservative_assumption"
+ },
+ "C10": {
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "u": [
+   20.604,
+   22.124
+  ],
+  "v": [
+   24.836,
+   25.456
+  ],
+  "height": 0.5,
+  "height_provenance": "conservative_assumption"
+ },
+ "C16": {
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "u": [
+   23.185,
+   23.805
+  ],
+  "v": [
+   35.054,
+   36.574
+  ],
+  "height": 0.5,
+  "height_provenance": "conservative_assumption"
+ },
+ "R3": {
+  "footprint": "Resistor_SMD:R_0402_1005Metric",
+  "u": [
+   25.842,
+   26.482
+  ],
+  "v": [
+   35.034,
+   36.594
+  ],
+  "height": 0.5,
+  "height_provenance": "conservative_assumption"
+ },
+ "C9": {
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "u": [
+   18.29,
+   19.81
+  ],
+  "v": [
+   29.408,
+   30.028
+  ],
+  "height": 0.5,
+  "height_provenance": "conservative_assumption"
+ },
+ "Y2": {
+  "footprint": "SamacSys_Parts:ABM8272T3",
+  "u": [
+   20.992,
+   24.342
+  ],
+  "v": [
+   37.902,
+   40.952
+  ],
+  "height": 0.9,
+  "height_provenance": "conservative_assumption"
+ },
+ "C15": {
+  "footprint": "Capacitor_SMD:C_0402_1005Metric",
+  "u": [
+   21.661,
+   22.281
+  ],
+  "v": [
+   35.054,
+   36.574
+  ],
+  "height": 0.5,
+  "height_provenance": "conservative_assumption"
+ }
+}

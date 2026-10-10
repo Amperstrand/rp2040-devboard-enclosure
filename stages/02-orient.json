@@ -1,0 +1,6 @@
+{
+  "stage": "S2_orient",
+  "orientation_convention": "Square 53.34 board; USB micro-B (J1) mates from the v=0 edge [citation: RP2040 Test.kicad_pcb footprint ZX62DB5PA830 at v 1.96..6.94]. Dual 2x18 headers J3 (u-min edge) and J4 (u-max edge) take jumpers from both long sides [citation: extracted footprint bboxes]. No display or user-facing readout; board is a dev board — held either way up, USB edge is 'bottom' for cabling.",
+  "user_facing_features": "USB micro-B opening in the v=0 wall; jumper-exit relief windows over both 2x18 header bands in the u walls; 4 M2.5 screws from the lid side into bosses.",
+  "citations": ["RP2040 Test.kicad_pcb (footprints J1/J3/J4)", "README.md (board description)"]
+}

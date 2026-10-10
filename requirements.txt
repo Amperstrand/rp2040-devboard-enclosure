@@ -1,0 +1,9 @@
+# validate.py / build.py dependencies — versions verified in CI and on
+# the 20-core build box (57/57 checks, STLs byte-identical to the
+# originally shipped ones on cadquery 2.8).
+cadquery==2.8.0
+numpy==2.5.2
+
+# Renders additionally need: pillow, playwright, and
+#   playwright install chromium
+# (scripts/render.py — not exercised by CI; regenerate locally.)

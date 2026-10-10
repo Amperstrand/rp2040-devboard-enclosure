@@ -1,0 +1,48 @@
+{
+ "source": "RP2040 Test.kicad_pcb",
+ "outline": {
+  "w": 53.34,
+  "h": 53.34,
+  "origin_kicad": [
+   119.38,
+   73.66
+  ]
+ },
+ "thickness": 1.6,
+ "thickness_provenance": "extracted_kicad (may be bare laminate - verify with calipers/coupon stair)",
+ "mounting_holes": [
+  {
+   "ref": "H3",
+   "center": [
+    12.7,
+    47.883
+   ],
+   "drill": 2.7
+  },
+  {
+   "ref": "H1",
+   "center": [
+    12.7,
+    5.457
+   ],
+   "drill": 2.7
+  },
+  {
+   "ref": "H4",
+   "center": [
+    40.64,
+    47.883
+   ],
+   "drill": 2.7
+  },
+  {
+   "ref": "H2",
+   "center": [
+    40.64,
+    5.457
+   ],
+   "drill": 2.7
+  }
+ ],
+ "coordinate_note": "board-local (u,v) = KiCad (X-x0, Y-y0); KiCad Y grows toward v-max"
+}

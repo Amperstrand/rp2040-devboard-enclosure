@@ -1,0 +1,77 @@
+[
+ {
+  "name": "seated_board_interference",
+  "pass": true,
+  "value": {
+   "volume": 0.0,
+   "holes_supported": 4
+  },
+  "expect": "0 mm3, 4/4 supported",
+  "note": "board rests on 4 boss shoulders; nothing else touches"
+ },
+ {
+  "name": "component_clearance",
+  "pass": true,
+  "value": {},
+  "expect": "",
+  "note": "all placed components clear bottom+lid (0 mm3)"
+ },
+ {
+  "name": "usb_envelope_clear",
+  "pass": true,
+  "value": 0.0,
+  "expect": "",
+  "note": "fully-seated micro-B plug + bend void free of shell"
+ },
+ {
+  "name": "header_exit_envelope_clear",
+  "pass": true,
+  "value": 0.0,
+  "expect": "",
+  "note": "2x18 jumper exits (both walls) + finger access free of shell"
+ },
+ {
+  "name": "bosses_at_measured_holes",
+  "pass": true,
+  "value": [
+   [
+    0.72,
+    0.0
+   ],
+   [
+    0.72,
+    0.0
+   ],
+   [
+    0.72,
+    0.0
+   ],
+   [
+    0.72,
+    0.0
+   ]
+  ],
+  "expect": "",
+  "note": "boss ring carries the hole annulus; pilot stays clear"
+ },
+ {
+  "name": "solids_valid",
+  "pass": true,
+  "value": {
+   "bottom": 8950.8,
+   "lid": 5875.8
+  },
+  "expect": "",
+  "note": "watertight B-reps, positive volume"
+ },
+ {
+  "name": "deterministic_rebuild",
+  "pass": true,
+  "value": {
+   "bottom": "67df12cc1580863a",
+   "lid": "0f8c51f9c767db9c"
+  },
+  "expect": "",
+  "note": "two consecutive builds produce hash-identical STLs"
+ }
+]
