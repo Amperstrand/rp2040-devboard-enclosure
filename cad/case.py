@@ -86,8 +86,9 @@ def lid():
     cx, cy = (ox0 + ox1) / 2, (oy0 + oy1) / 2
     roof = (
         cq.Workplane("XY", origin=(cx, cy, LID_Z0))
-        .rect(ox1 - ox0, oy1 - oy0).extrude(1.6)
-        .edges("|Z").fillet(P.CORNER_R)
+        .rect(ox1 - ox0, oy1 - oy0).extrude(1.6)\
+        .edges("|Z").fillet(P.CORNER_R)\
+        .edges(">Z").chamfer(0.6)
     ).val()
     lip = _box(INT_U0 + P.LID_GAP, INT_V0 + P.LID_GAP,
                INT_U1 - P.LID_GAP, INT_V1 - P.LID_GAP,
